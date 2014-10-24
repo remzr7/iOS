@@ -10,4 +10,13 @@
 
 @interface CustomEventCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *eventTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *organizerLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *monthLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+
 @end

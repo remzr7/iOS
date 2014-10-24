@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1085DC319FAA0BA00A01597 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C1085DBE19FAA0BA00A01597 /* LICENSE.txt */; };
+		C1085DC419FAA0BA00A01597 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1085DBF19FAA0BA00A01597 /* RobotoSlab-Bold.ttf */; };
+		C1085DC519FAA0BA00A01597 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1085DC019FAA0BA00A01597 /* RobotoSlab-Light.ttf */; };
+		C1085DC619FAA0BA00A01597 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1085DC119FAA0BA00A01597 /* RobotoSlab-Regular.ttf */; };
+		C1085DC719FAA0BA00A01597 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1085DC219FAA0BA00A01597 /* RobotoSlab-Thin.ttf */; };
 		D3A614BC19FA466C002E6C47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A614BB19FA466C002E6C47 /* main.m */; };
 		D3A614BF19FA466C002E6C47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A614BE19FA466C002E6C47 /* AppDelegate.m */; };
 		D3A614C519FA466C002E6C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A614C319FA466C002E6C47 /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1085DBE19FAA0BA00A01597 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C1085DBF19FAA0BA00A01597 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		C1085DC019FAA0BA00A01597 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		C1085DC119FAA0BA00A01597 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		C1085DC219FAA0BA00A01597 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 		D3A614B619FA466C002E6C47 /* We Build SG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "We Build SG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A614BA19FA466C002E6C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3A614BB19FA466C002E6C47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +76,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1085DBC19FAA0BA00A01597 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1085DBD19FAA0BA00A01597 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1085DBD19FAA0BA00A01597 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1085DBE19FAA0BA00A01597 /* LICENSE.txt */,
+				C1085DBF19FAA0BA00A01597 /* RobotoSlab-Bold.ttf */,
+				C1085DC019FAA0BA00A01597 /* RobotoSlab-Light.ttf */,
+				C1085DC119FAA0BA00A01597 /* RobotoSlab-Regular.ttf */,
+				C1085DC219FAA0BA00A01597 /* RobotoSlab-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D3A614AD19FA466C002E6C47 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +132,7 @@
 		D3A614B919FA466C002E6C47 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1085DBC19FAA0BA00A01597 /* Resources */,
 				D3A614BA19FA466C002E6C47 /* Info.plist */,
 				D3A614BB19FA466C002E6C47 /* main.m */,
 			);
@@ -225,8 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1085DC319FAA0BA00A01597 /* LICENSE.txt in Resources */,
 				D3A614C519FA466C002E6C47 /* Main.storyboard in Resources */,
 				D3A614CA19FA466C002E6C47 /* LaunchScreen.xib in Resources */,
+				C1085DC619FAA0BA00A01597 /* RobotoSlab-Regular.ttf in Resources */,
+				C1085DC419FAA0BA00A01597 /* RobotoSlab-Bold.ttf in Resources */,
+				C1085DC519FAA0BA00A01597 /* RobotoSlab-Light.ttf in Resources */,
+				C1085DC719FAA0BA00A01597 /* RobotoSlab-Thin.ttf in Resources */,
 				D3A614C719FA466C002E6C47 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +476,7 @@
 				D3A614DB19FA466C002E6C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3A614DC19FA466C002E6C47 /* Build configuration list for PBXNativeTarget "We Build SGTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +485,7 @@
 				D3A614DE19FA466C002E6C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

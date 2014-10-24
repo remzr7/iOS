@@ -15,18 +15,20 @@
 
 @implementation EventCollectionViewController
 
-static NSString * const reuseIdentifier = @"CustomEventCells";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self addCustomTitleToNavBar:@"Open Events"];
+}
+
+- (void)addCustomTitleToNavBar:(NSString *)customTitle {
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 3, 200, 40)];
+    titleLabel.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:14.0];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.textColor = [UIColor colorWithRed:(191.0/255.0) green:(21.0/255.0) blue:(33.0/255.0) alpha:1.0];
+    titleLabel.text = customTitle;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+    self.navigationItem.titleView = titleLabel;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,9 +58,18 @@ static NSString * const reuseIdentifier = @"CustomEventCells";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CustomEventCollectionViewCell *cell = (CustomEventCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor colorWithRed:(249.0/255.0) green:(246.0/255.0) blue:(224.0/255.0) alpha:1.0];
+    CustomEventCollectionViewCell *cell = (CustomEventCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"CustomEventCells" forIndexPath:indexPath];
     
+    cell.eventTitleLabel.font = [UIFont fontWithName:@"RobotoSlab-Regular" size:16.0];
+    cell.eventTitleLabel.textColor = [UIColor colorWithRed:(222.0/255.0) green:(98.0/255.0) blue:(78.0/255.0) alpha:1.0];
+    [cell.eventTitleLabel sizeToFit];
+    
+    cell.organizerLabel.font = [UIFont fontWithName:@"RobotoSlab-Regular" size:14.0];
+    [cell.organizerLabel sizeToFit];
+
+    cell.dateLabel.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:14.0];
+    cell.dayLabel.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:14.0];
+
     return cell;
 }
 
