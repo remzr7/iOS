@@ -3,7 +3,7 @@
 iOS and Apple Watch client for webuild.sg
 
 * This is still under-development and not yet a working prototype! 
-* The sample project requires Xcode 6.2 
+* The sample project requires **Xcode 6.2** 
 
 ## Feature List 
 
@@ -35,7 +35,6 @@ iOS and Apple Watch client for webuild.sg
   * List all events happening Today
   * List events happening This week (Don't want users to scroll too many events)
   * Allow users to add an event to Calendar 
-  * 
 
 *Testing*  
 * TestFlight test by selected members 
