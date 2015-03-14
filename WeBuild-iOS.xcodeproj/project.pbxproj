@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2C12B12C5188D817B6DFD8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89B16D9A787F1591C13A376 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D3236BEC1AB3C21E00B5F3BC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3236BEB1AB3C21E00B5F3BC /* InterfaceController.swift */; };
+		D3236BEE1AB3C21E00B5F3BC /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3236BED1AB3C21E00B5F3BC /* GlanceController.swift */; };
+		D3236BF01AB3C21E00B5F3BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3236BEF1AB3C21E00B5F3BC /* Images.xcassets */; };
+		D3236BF41AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D3236BF31AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app */; };
+		D3236BFC1AB3C21E00B5F3BC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3236BFA1AB3C21E00B5F3BC /* Interface.storyboard */; };
+		D3236BFE1AB3C21E00B5F3BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3236BFD1AB3C21E00B5F3BC /* Images.xcassets */; };
+		D3236C011AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3236BE71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D367BC841AB2C4D4006B48AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BC831AB2C4D4006B48AF /* AppDelegate.swift */; };
+		D367BC861AB2C4D4006B48AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BC851AB2C4D4006B48AF /* ViewController.swift */; };
+		D367BC891AB2C4D4006B48AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D367BC871AB2C4D4006B48AF /* Main.storyboard */; };
+		D367BC8B1AB2C4D4006B48AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D367BC8A1AB2C4D4006B48AF /* Images.xcassets */; };
+		D367BC8E1AB2C4D4006B48AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D367BC8C1AB2C4D4006B48AF /* LaunchScreen.xib */; };
+		D367BC9A1AB2C4D4006B48AF /* WeBuild_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BC991AB2C4D4006B48AF /* WeBuild_iOSTests.swift */; };
+		D367BCA61AB2C940006B48AF /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BCA51AB2C940006B48AF /* NetworkHelper.swift */; };
+		D367BCA81AB2CA0D006B48AF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BCA71AB2CA0D006B48AF /* Event.swift */; };
+		D367BCAA1AB2CA19006B48AF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BCA91AB2CA19006B48AF /* Podcast.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3236BF51AB3C21E00B5F3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D367BC761AB2C4D4006B48AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3236BF21AB3C21E00B5F3BC;
+			remoteInfo = "WeBuild-iOS WatchKit App";
+		};
+		D3236BFF1AB3C21E00B5F3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D367BC761AB2C4D4006B48AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3236BE61AB3C21E00B5F3BC;
+			remoteInfo = "WeBuild-iOS WatchKit Extension";
+		};
+		D367BC941AB2C4D4006B48AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D367BC761AB2C4D4006B48AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D367BC7D1AB2C4D4006B48AF;
+			remoteInfo = "WeBuild-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3236C081AB3C21E00B5F3BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3236C011AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		006D9CDF322710FF4172A3B8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B89B16D9A787F1591C13A376 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0A0183C0055680E522AA2A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D3236BE71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WeBuild-iOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3236BEA1AB3C21E00B5F3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3236BEB1AB3C21E00B5F3BC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D3236BED1AB3C21E00B5F3BC /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		D3236BEF1AB3C21E00B5F3BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3236BF31AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeBuild-iOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3236BF91AB3C21E00B5F3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3236BFB1AB3C21E00B5F3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D3236BFD1AB3C21E00B5F3BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D367BC7E1AB2C4D4006B48AF /* WeBuild-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeBuild-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D367BC821AB2C4D4006B48AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D367BC831AB2C4D4006B48AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D367BC851AB2C4D4006B48AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D367BC881AB2C4D4006B48AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D367BC8A1AB2C4D4006B48AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D367BC8D1AB2C4D4006B48AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D367BC931AB2C4D4006B48AF /* WeBuild-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WeBuild-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D367BC981AB2C4D4006B48AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D367BC991AB2C4D4006B48AF /* WeBuild_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeBuild_iOSTests.swift; sourceTree = "<group>"; };
+		D367BCA51AB2C940006B48AF /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D367BCA71AB2CA0D006B48AF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D367BCA91AB2CA19006B48AF /* Podcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3236BE41AB3C21E00B5F3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC7B1AB2C4D4006B48AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2C12B12C5188D817B6DFD8 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC901AB2C4D4006B48AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		836C5A7BA263F9A88DDB1276 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				006D9CDF322710FF4172A3B8 /* Pods.debug.xcconfig */,
+				BD0A0183C0055680E522AA2A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B284FF29BE67185BCE7EF13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89B16D9A787F1591C13A376 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3236BE81AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3236BEB1AB3C21E00B5F3BC /* InterfaceController.swift */,
+				D3236BED1AB3C21E00B5F3BC /* GlanceController.swift */,
+				D3236BEF1AB3C21E00B5F3BC /* Images.xcassets */,
+				D3236BE91AB3C21E00B5F3BC /* Supporting Files */,
+			);
+			path = "WeBuild-iOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D3236BE91AB3C21E00B5F3BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3236BEA1AB3C21E00B5F3BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3236BF71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D3236BFA1AB3C21E00B5F3BC /* Interface.storyboard */,
+				D3236BFD1AB3C21E00B5F3BC /* Images.xcassets */,
+				D3236BF81AB3C21E00B5F3BC /* Supporting Files */,
+			);
+			path = "WeBuild-iOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		D3236BF81AB3C21E00B5F3BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3236BF91AB3C21E00B5F3BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D367BC751AB2C4D4006B48AF = {
+			isa = PBXGroup;
+			children = (
+				D367BC801AB2C4D4006B48AF /* WeBuild-iOS */,
+				D367BC961AB2C4D4006B48AF /* WeBuild-iOSTests */,
+				D3236BE81AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension */,
+				D3236BF71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App */,
+				D367BC7F1AB2C4D4006B48AF /* Products */,
+				836C5A7BA263F9A88DDB1276 /* Pods */,
+				9B284FF29BE67185BCE7EF13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D367BC7F1AB2C4D4006B48AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D367BC7E1AB2C4D4006B48AF /* WeBuild-iOS.app */,
+				D367BC931AB2C4D4006B48AF /* WeBuild-iOSTests.xctest */,
+				D3236BE71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex */,
+				D3236BF31AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D367BC801AB2C4D4006B48AF /* WeBuild-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D367BCA41AB2C7F5006B48AF /* Models */,
+				D367BCA31AB2C7EA006B48AF /* Helpers */,
+				D367BC831AB2C4D4006B48AF /* AppDelegate.swift */,
+				D367BC851AB2C4D4006B48AF /* ViewController.swift */,
+				D367BC871AB2C4D4006B48AF /* Main.storyboard */,
+				D367BC8A1AB2C4D4006B48AF /* Images.xcassets */,
+				D367BC8C1AB2C4D4006B48AF /* LaunchScreen.xib */,
+				D367BC811AB2C4D4006B48AF /* Supporting Files */,
+			);
+			path = "WeBuild-iOS";
+			sourceTree = "<group>";
+		};
+		D367BC811AB2C4D4006B48AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D367BC821AB2C4D4006B48AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D367BC961AB2C4D4006B48AF /* WeBuild-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D367BC991AB2C4D4006B48AF /* WeBuild_iOSTests.swift */,
+				D367BC971AB2C4D4006B48AF /* Supporting Files */,
+			);
+			path = "WeBuild-iOSTests";
+			sourceTree = "<group>";
+		};
+		D367BC971AB2C4D4006B48AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D367BC981AB2C4D4006B48AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D367BCA31AB2C7EA006B48AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D367BCA51AB2C940006B48AF /* NetworkHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D367BCA41AB2C7F5006B48AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D367BCA71AB2CA0D006B48AF /* Event.swift */,
+				D367BCA91AB2CA19006B48AF /* Podcast.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3236BE61AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3236C071AB3C21E00B5F3BC /* Build configuration list for PBXNativeTarget "WeBuild-iOS WatchKit Extension" */;
+			buildPhases = (
+				D3236BE31AB3C21E00B5F3BC /* Sources */,
+				D3236BE41AB3C21E00B5F3BC /* Frameworks */,
+				D3236BE51AB3C21E00B5F3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3236BF61AB3C21E00B5F3BC /* PBXTargetDependency */,
+			);
+			name = "WeBuild-iOS WatchKit Extension";
+			productName = "WeBuild-iOS WatchKit Extension";
+			productReference = D3236BE71AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D3236BF21AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3236C061AB3C21E00B5F3BC /* Build configuration list for PBXNativeTarget "WeBuild-iOS WatchKit App" */;
+			buildPhases = (
+				D3236BF11AB3C21E00B5F3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeBuild-iOS WatchKit App";
+			productName = "WeBuild-iOS WatchKit App";
+			productReference = D3236BF31AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		D367BC7D1AB2C4D4006B48AF /* WeBuild-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D367BC9D1AB2C4D4006B48AF /* Build configuration list for PBXNativeTarget "WeBuild-iOS" */;
+			buildPhases = (
+				0D344230F3E4BABF2CF7F7C7 /* Check Pods Manifest.lock */,
+				D367BC7A1AB2C4D4006B48AF /* Sources */,
+				D367BC7B1AB2C4D4006B48AF /* Frameworks */,
+				D367BC7C1AB2C4D4006B48AF /* Resources */,
+				15FAA1A38947829FA80EE6F8 /* Embed Pods Frameworks */,
+				5863B1CDA6AF601FEC451C73 /* Copy Pods Resources */,
+				D3236C081AB3C21E00B5F3BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3236C001AB3C21E00B5F3BC /* PBXTargetDependency */,
+			);
+			name = "WeBuild-iOS";
+			productName = "WeBuild-iOS";
+			productReference = D367BC7E1AB2C4D4006B48AF /* WeBuild-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D367BC921AB2C4D4006B48AF /* WeBuild-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D367BCA01AB2C4D4006B48AF /* Build configuration list for PBXNativeTarget "WeBuild-iOSTests" */;
+			buildPhases = (
+				D367BC8F1AB2C4D4006B48AF /* Sources */,
+				D367BC901AB2C4D4006B48AF /* Frameworks */,
+				D367BC911AB2C4D4006B48AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D367BC951AB2C4D4006B48AF /* PBXTargetDependency */,
+			);
+			name = "WeBuild-iOSTests";
+			productName = "WeBuild-iOSTests";
+			productReference = D367BC931AB2C4D4006B48AF /* WeBuild-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D367BC761AB2C4D4006B48AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = WeBuild.SG;
+				TargetAttributes = {
+					D3236BE61AB3C21E00B5F3BC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D3236BF21AB3C21E00B5F3BC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D367BC7D1AB2C4D4006B48AF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D367BC921AB2C4D4006B48AF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = D367BC7D1AB2C4D4006B48AF;
+					};
+				};
+			};
+			buildConfigurationList = D367BC791AB2C4D4006B48AF /* Build configuration list for PBXProject "WeBuild-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D367BC751AB2C4D4006B48AF;
+			productRefGroup = D367BC7F1AB2C4D4006B48AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D367BC7D1AB2C4D4006B48AF /* WeBuild-iOS */,
+				D367BC921AB2C4D4006B48AF /* WeBuild-iOSTests */,
+				D3236BE61AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension */,
+				D3236BF21AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3236BE51AB3C21E00B5F3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3236BF01AB3C21E00B5F3BC /* Images.xcassets in Resources */,
+				D3236BF41AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3236BF11AB3C21E00B5F3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3236BFC1AB3C21E00B5F3BC /* Interface.storyboard in Resources */,
+				D3236BFE1AB3C21E00B5F3BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC7C1AB2C4D4006B48AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367BC891AB2C4D4006B48AF /* Main.storyboard in Resources */,
+				D367BC8E1AB2C4D4006B48AF /* LaunchScreen.xib in Resources */,
+				D367BC8B1AB2C4D4006B48AF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC911AB2C4D4006B48AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D344230F3E4BABF2CF7F7C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15FAA1A38947829FA80EE6F8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5863B1CDA6AF601FEC451C73 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3236BE31AB3C21E00B5F3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3236BEC1AB3C21E00B5F3BC /* InterfaceController.swift in Sources */,
+				D3236BEE1AB3C21E00B5F3BC /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC7A1AB2C4D4006B48AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367BCA81AB2CA0D006B48AF /* Event.swift in Sources */,
+				D367BC861AB2C4D4006B48AF /* ViewController.swift in Sources */,
+				D367BCA61AB2C940006B48AF /* NetworkHelper.swift in Sources */,
+				D367BC841AB2C4D4006B48AF /* AppDelegate.swift in Sources */,
+				D367BCAA1AB2CA19006B48AF /* Podcast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D367BC8F1AB2C4D4006B48AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367BC9A1AB2C4D4006B48AF /* WeBuild_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3236BF61AB3C21E00B5F3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3236BF21AB3C21E00B5F3BC /* WeBuild-iOS WatchKit App */;
+			targetProxy = D3236BF51AB3C21E00B5F3BC /* PBXContainerItemProxy */;
+		};
+		D3236C001AB3C21E00B5F3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3236BE61AB3C21E00B5F3BC /* WeBuild-iOS WatchKit Extension */;
+			targetProxy = D3236BFF1AB3C21E00B5F3BC /* PBXContainerItemProxy */;
+		};
+		D367BC951AB2C4D4006B48AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D367BC7D1AB2C4D4006B48AF /* WeBuild-iOS */;
+			targetProxy = D367BC941AB2C4D4006B48AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3236BFA1AB3C21E00B5F3BC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3236BFB1AB3C21E00B5F3BC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		D367BC871AB2C4D4006B48AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D367BC881AB2C4D4006B48AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D367BC8C1AB2C4D4006B48AF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D367BC8D1AB2C4D4006B48AF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3236C021AB3C21E00B5F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WeBuild-iOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D3236C031AB3C21E00B5F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WeBuild-iOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D3236C041AB3C21E00B5F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = WeBuild_iOS_WatchKit_Extension;
+				INFOPLIST_FILE = "WeBuild-iOS WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D3236C051AB3C21E00B5F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WeBuild_iOS_WatchKit_Extension;
+				INFOPLIST_FILE = "WeBuild-iOS WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		D367BC9B1AB2C4D4006B48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D367BC9C1AB2C4D4006B48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D367BC9E1AB2C4D4006B48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006D9CDF322710FF4172A3B8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "WeBuild-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D367BC9F1AB2C4D4006B48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0A0183C0055680E522AA2A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "WeBuild-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D367BCA11AB2C4D4006B48AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WeBuild-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeBuild-iOS.app/WeBuild-iOS";
+			};
+			name = Debug;
+		};
+		D367BCA21AB2C4D4006B48AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WeBuild-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeBuild-iOS.app/WeBuild-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3236C061AB3C21E00B5F3BC /* Build configuration list for PBXNativeTarget "WeBuild-iOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3236C041AB3C21E00B5F3BC /* Debug */,
+				D3236C051AB3C21E00B5F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3236C071AB3C21E00B5F3BC /* Build configuration list for PBXNativeTarget "WeBuild-iOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3236C021AB3C21E00B5F3BC /* Debug */,
+				D3236C031AB3C21E00B5F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D367BC791AB2C4D4006B48AF /* Build configuration list for PBXProject "WeBuild-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D367BC9B1AB2C4D4006B48AF /* Debug */,
+				D367BC9C1AB2C4D4006B48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D367BC9D1AB2C4D4006B48AF /* Build configuration list for PBXNativeTarget "WeBuild-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D367BC9E1AB2C4D4006B48AF /* Debug */,
+				D367BC9F1AB2C4D4006B48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D367BCA01AB2C4D4006B48AF /* Build configuration list for PBXNativeTarget "WeBuild-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D367BCA11AB2C4D4006B48AF /* Debug */,
+				D367BCA21AB2C4D4006B48AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D367BC761AB2C4D4006B48AF /* Project object */;
+}
