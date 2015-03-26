@@ -9,13 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  let networkHelper = NetworkHelper()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
     // Test if event response is coming
-    let events = NetworkHelper.getAllEvents()
+    let events = networkHelper.getAllEvents()
   }
 
   override func didReceiveMemoryWarning() {
