@@ -11,6 +11,7 @@ import Alamofire
 
 let eventURL = "https://webuild.sg/api/v1/events"
 let podcastURL = "https://webuild.sg/api/v1/podcasts"
+let repoURL = "https://webuild.sg/api/v1/repos"
 
 enum APIType {
   case Event
@@ -19,17 +20,19 @@ enum APIType {
 }
 
 struct NetworkHelper {
+  let util = Utils()
+  
   func getAllEvents() -> [AnyObject] {
     var eventsArray = []
     
     Alamofire.request(.GET, eventURL)
-      .responseJSON { (request, response, JSON, error) in
+      .responseJSON { (request, response, json, error) in
         if error != nil {
           println(error)
           return
         }
         
-        if self.checkIfAPITimeStampHasChanged(APIType.Event, jsonValue: JSON) {
+        if self.util.checkIfAPITimeStampHasChanged(APIType.Event, jsonValue: json) {
           println("require stuffs to be reloaded")
         } else {
           println("no need to reload new stuffs")
@@ -54,20 +57,5 @@ struct NetworkHelper {
     }
     
     return podcastsArray
-  }
-  
-  func checkIfAPITimeStampHasChanged(apiType:APIType, jsonValue:AnyObject?) -> Bool {
-    switch apiType {
-    case APIType.Event:
-      println(jsonValue)
-    case APIType.Podcast:
-      println("2")
-    case APIType.Repo:
-      println("3")
-    default:
-      println("4")
-    }
-    
-    return false
-  }
+  }    
 }
