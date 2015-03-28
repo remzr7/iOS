@@ -33,9 +33,9 @@ struct NetworkHelper {
         }
         
         if self.util.checkIfAPITimeStampHasChanged(APIType.Event, jsonValue: json) {
-          println("require stuffs to be reloaded")
+          eventsArray = self.util.fetchAndStoreData(APIType.Event, jsonValue: json)
         } else {
-          println("no need to reload new stuffs")
+          eventsArray = self.util.fetchDataFromFileSystem(APIType.Event, jsonValue: json)
         }
     }
     
@@ -46,16 +46,39 @@ struct NetworkHelper {
     var podcastsArray = []
     
     Alamofire.request(.GET, podcastURL)
-      .responseJSON { (request, response, JSON, error) in
+      .responseJSON { (request, response, json, error) in
         if error != nil {
           println(error)
           return
         }
         
-        // JSON Serialization here ...
-        println(JSON)
+        if self.util.checkIfAPITimeStampHasChanged(APIType.Podcast, jsonValue: json) {
+          podcastsArray = self.util.fetchAndStoreData(APIType.Podcast, jsonValue: json)
+        } else {
+          podcastsArray = self.util.fetchDataFromFileSystem(APIType.Podcast, jsonValue: json)
+        }
     }
     
     return podcastsArray
-  }    
+  }
+  
+  func getAllRepos() -> [AnyObject] {
+    var reposArray = []
+    
+    Alamofire.request(.GET, repoURL)
+      .responseJSON { (request, response, json, error) in
+        if error != nil {
+          println(error)
+          return
+        }
+        
+        if self.util.checkIfAPITimeStampHasChanged(APIType.Repo, jsonValue: json) {
+          reposArray = self.util.fetchAndStoreData(APIType.Repo, jsonValue: json)
+        } else {
+          reposArray = self.util.fetchDataFromFileSystem(APIType.Repo, jsonValue: json)
+        }
+    }
+    
+    return reposArray
+  }
 }

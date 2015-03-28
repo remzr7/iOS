@@ -25,6 +25,8 @@
 		D367BCA81AB2CA0D006B48AF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BCA71AB2CA0D006B48AF /* Event.swift */; };
 		D367BCAA1AB2CA19006B48AF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367BCA91AB2CA19006B48AF /* Podcast.swift */; };
 		D3FAE3BA1AC6D4C80024A766 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAE3B91AC6D4C80024A766 /* Utils.swift */; };
+		D3FAE3BC1AC7165D0024A766 /* ObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAE3BB1AC7165D0024A766 /* ObjectHandler.swift */; };
+		D3FAE3BE1AC718930024A766 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAE3BD1AC718930024A766 /* Repo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		D367BCA71AB2CA0D006B48AF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D367BCA91AB2CA19006B48AF /* Podcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		D3FAE3B91AC6D4C80024A766 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D3FAE3BB1AC7165D0024A766 /* ObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectHandler.swift; sourceTree = "<group>"; };
+		D3FAE3BD1AC718930024A766 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,7 @@
 			children = (
 				D367BCA51AB2C940006B48AF /* NetworkHelper.swift */,
 				D3FAE3B91AC6D4C80024A766 /* Utils.swift */,
+				D3FAE3BB1AC7165D0024A766 /* ObjectHandler.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			children = (
 				D367BCA71AB2CA0D006B48AF /* Event.swift */,
 				D367BCA91AB2CA19006B48AF /* Podcast.swift */,
+				D3FAE3BD1AC718930024A766 /* Repo.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -480,7 +486,9 @@
 				D367BCA81AB2CA0D006B48AF /* Event.swift in Sources */,
 				D367BC861AB2C4D4006B48AF /* ViewController.swift in Sources */,
 				D367BCA61AB2C940006B48AF /* NetworkHelper.swift in Sources */,
+				D3FAE3BE1AC718930024A766 /* Repo.swift in Sources */,
 				D367BC841AB2C4D4006B48AF /* AppDelegate.swift in Sources */,
+				D3FAE3BC1AC7165D0024A766 /* ObjectHandler.swift in Sources */,
 				D367BCAA1AB2CA19006B48AF /* Podcast.swift in Sources */,
 				D3FAE3BA1AC6D4C80024A766 /* Utils.swift in Sources */,
 			);

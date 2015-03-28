@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     
     // Test if event response is coming
-    let events = networkHelper.getAllEvents()
+    let events = networkHelper.getAllRepos()
   }
 
   override func didReceiveMemoryWarning() {
