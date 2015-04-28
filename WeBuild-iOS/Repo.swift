@@ -19,10 +19,10 @@ class Repo : NSObject, NSCoding {
   }
   
   required init(coder aDecoder: NSCoder) {
-    self.repoName = aDecoder.decodeObjectForKey("repoName") as String
-    self.repoURL = aDecoder.decodeObjectForKey("repoURL") as String
-    self.repoLang = aDecoder.decodeObjectForKey("repoLang") as String
-    self.repoDesc = aDecoder.decodeObjectForKey("repoDesc") as String    
+    self.repoName = aDecoder.decodeObjectForKey("repoName") as! String
+    self.repoURL = aDecoder.decodeObjectForKey("repoURL") as! String
+    self.repoLang = aDecoder.decodeObjectForKey("repoLang") as! String
+    self.repoDesc = aDecoder.decodeObjectForKey("repoDesc") as! String    
   }
   
   func encodeWithCoder(aCoder: NSCoder) {

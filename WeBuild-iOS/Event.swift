@@ -23,13 +23,13 @@ class Event : NSObject, NSCoding {
   }
   
   required init(coder aDecoder: NSCoder) {
-    self.eventName = aDecoder.decodeObjectForKey("eventName") as String
-    self.eventDescription = aDecoder.decodeObjectForKey("eventDescription") as String
-    self.eventLocation = aDecoder.decodeObjectForKey("eventLocation") as String
-    self.eventStartTime = aDecoder.decodeObjectForKey("eventStartTime") as NSDate
-    self.eventEndTime = aDecoder.decodeObjectForKey("eventEndTime") as NSDate
-    self.groupName = aDecoder.decodeObjectForKey("groupName") as String
-    self.groupURL = aDecoder.decodeObjectForKey("groupURL") as String
+    self.eventName = aDecoder.decodeObjectForKey("eventName") as! String
+    self.eventDescription = aDecoder.decodeObjectForKey("eventDescription") as! String
+    self.eventLocation = aDecoder.decodeObjectForKey("eventLocation") as! String
+    self.eventStartTime = aDecoder.decodeObjectForKey("eventStartTime") as! NSDate
+    self.eventEndTime = aDecoder.decodeObjectForKey("eventEndTime") as! NSDate
+    self.groupName = aDecoder.decodeObjectForKey("groupName") as! String
+    self.groupURL = aDecoder.decodeObjectForKey("groupURL") as! String
     
   }
   

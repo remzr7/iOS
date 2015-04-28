@@ -20,10 +20,10 @@ class Podcast : NSObject, NSCoding {
   }
   
   required init(coder aDecoder: NSCoder) {
-    self.podcastTitle = aDecoder.decodeObjectForKey("podcastTitle") as String
-    self.podcastDescription = aDecoder.decodeObjectForKey("podcastDescription") as String
-    self.downloadLink = aDecoder.decodeObjectForKey("downloadLink") as String
-    self.podcastDate = aDecoder.decodeObjectForKey("podcastDate") as NSDate
+    self.podcastTitle = aDecoder.decodeObjectForKey("podcastTitle") as! String
+    self.podcastDescription = aDecoder.decodeObjectForKey("podcastDescription") as! String
+    self.downloadLink = aDecoder.decodeObjectForKey("downloadLink") as! String
+    self.podcastDate = aDecoder.decodeObjectForKey("podcastDate") as! NSDate
   }
   
   func encodeWithCoder(aCoder: NSCoder) {

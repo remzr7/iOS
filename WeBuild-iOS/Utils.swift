@@ -46,7 +46,7 @@ struct Utils {
   
   func checkIfUserDefaultsValueHasChanged(keyToCheck:String, storedDate:NSDate) -> Bool {
     if (NSUserDefaults.standardUserDefaults().objectForKey(keyToCheck) != nil) {
-      if (NSUserDefaults.standardUserDefaults().valueForKey(keyToCheck) as NSDate == storedDate) {
+      if (NSUserDefaults.standardUserDefaults().valueForKey(keyToCheck) as! NSDate == storedDate) {
         return false
       }
     }
@@ -76,7 +76,7 @@ struct Utils {
       return dataArray
     }
     
-    var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as String
+    var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as! String
     var getFilePath = paths.stringByAppendingPathComponent("\(nameOfFilePrefix).plist") as NSString
     var checkValidation = NSFileManager.defaultManager()
     
@@ -107,7 +107,7 @@ struct Utils {
       return dataArray
     }
     
-    var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as String
+    var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as! String
     var getFilePath = paths.stringByAppendingPathComponent("\(nameOfFilePrefix).plist")
     var checkValidation = NSFileManager.defaultManager()
     

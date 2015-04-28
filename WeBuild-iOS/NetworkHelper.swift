@@ -39,7 +39,7 @@ struct NetworkHelper {
         }
     }
     
-    return eventsArray
+    return eventsArray as [AnyObject]
   }
   
   func getAllPodcasts() -> [AnyObject] {
@@ -59,7 +59,7 @@ struct NetworkHelper {
         }
     }
     
-    return podcastsArray
+    return podcastsArray as [AnyObject]
   }
   
   func getAllRepos() -> [AnyObject] {
@@ -79,6 +79,6 @@ struct NetworkHelper {
         }
     }
     
-    return reposArray
+    return reposArray as [AnyObject]
   }
 }
