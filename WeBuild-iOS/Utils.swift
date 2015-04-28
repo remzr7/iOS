@@ -82,11 +82,11 @@ struct Utils {
     
     println(getFilePath)
 
-    if (checkValidation.fileExistsAtPath(getFilePath)) {
-        NSFileManager.defaultManager().removeItemAtPath(getFilePath, error: nil)
+    if (checkValidation.fileExistsAtPath(getFilePath as String)) {
+        NSFileManager.defaultManager().removeItemAtPath(getFilePath as String, error: nil)
     }
     
-    NSFileManager.defaultManager().createFileAtPath(getFilePath,
+    NSFileManager.defaultManager().createFileAtPath(getFilePath as String,
     contents:NSKeyedArchiver.archivedDataWithRootObject(dataArray), attributes: nil)
     
     return dataArray
@@ -114,7 +114,7 @@ struct Utils {
     println(getFilePath)
     
     if (checkValidation.fileExistsAtPath(getFilePath)) {
-       dataArray = NSKeyedUnarchiver.unarchiveObjectWithFile(getFilePath) as NSArray!
+       dataArray = NSKeyedUnarchiver.unarchiveObjectWithFile(getFilePath) as! Array
        println(dataArray)
     } else {
       dataArray = self.fetchAndStoreData(apiType, jsonValue: jsonValue)
